@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
   let temperatureDegree = document.querySelector('.temperature-degree');
   let locationTimezone = document.querySelector('.location-timezone');
 
+
   if (navigator.geolocation) { // если есть доступ к геолокации
     navigator.geolocation.getCurrentPosition(position => {
       longitude = position.coords.longitude;
@@ -16,6 +17,7 @@ window.addEventListener('load', () => {
           return data.json();
         })
         .then(data => {
+          console.log(data)
           const { temperature, summary, icon } = data.currently;
           temperatureDegree.innerHTML = ((temperature - 32) * 5 / 9).toFixed();
           temperatureDescription.innerHTML = summary;

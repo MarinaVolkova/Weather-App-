@@ -10,8 +10,8 @@ body{
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
-  font-family: sans-serif;
+  background: black;
+  font-family: 'Cinzel', serif;
   color: aliceblue;
 }
 .location, .temperature{
@@ -23,6 +23,12 @@ body{
 }
 .temperature{
   flex-direction: column;
+  justify-content: space-around;
+}
+
+.temperature-description{
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 20px;
 }
 .degree-section{
   display: flex;
