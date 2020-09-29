@@ -26,6 +26,8 @@ window.addEventListener('load', () => {
         });
     });
 
+  }else{
+    temperatureDescription.innerHTML = 'Упс..Мы не знаем где Вы:('
   }
   function setIcons(icon, iconID) {
     const skycons = new Skycons({ color: "white" });
